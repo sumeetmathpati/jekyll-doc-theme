@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="w3-theme-l5">
+
+    {% include sidebar.html %}
+
+    <!-- Go to top button -->
+    <button onclick="topFunction()" id="go-to-top-button" title="Go to top">Top</button>
+
+    <!-- Page Container -->
+
+    <div id="main" class="w3-container" style="max-width:1400px;margin-left: 180px;">
+
+        {% include navbar.html %}
+
+        <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-card w3-round w3-white">
+                <div class="w3-container w3-padding">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+    </div>
+    <!-- End Page Container -->
+    <br>
+
+    
+
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+</body>
+
+</html>

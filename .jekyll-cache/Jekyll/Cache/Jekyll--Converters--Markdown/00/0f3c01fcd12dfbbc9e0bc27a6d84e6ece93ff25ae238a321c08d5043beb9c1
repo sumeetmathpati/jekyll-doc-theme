@@ -1,0 +1,50 @@
+I"Ø<h1 id="john-doe">John Doe</h1>
+<p>Software developer, XYZ Company</p>
+
+<h2 id="experiance">Experiance</h2>
+
+<ul>
+  <li><strong>Software engineer (2007 - 2010)</strong>
+    <ul>
+      <li>Computer science</li>
+    </ul>
+  </li>
+  <li><strong>Web developer (2005 - 2007)</strong>
+    <ul>
+      <li>Artificial intelligence</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="education">Education</h2>
+
+<ul>
+  <li><strong>Bachelor&#8217;s degree (2000 - 2004)</strong>
+    <ul>
+      <li>Computer science</li>
+    </ul>
+  </li>
+  <li><strong>Master&#8217;s degree (2005 - 2007)</strong>
+    <ul>
+      <li>Artificial intelligence</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+  <li><strong><a href="https://github.com/">Project 1</a></strong>
+    <ul>
+      <li>Description</li>
+      <li>Description</li>
+    </ul>
+  </li>
+  <li><strong><a href="https://github.com/">Project 2</a></strong>
+    <ul>
+      <li>Description</li>
+      <li>Description</li>
+    </ul>
+  </li>
+</ul>
+:ET
