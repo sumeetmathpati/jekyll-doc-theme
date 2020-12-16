@@ -68,54 +68,80 @@
         <div class="w3-row w3-margin-left w3-margin-right">
             <div class="w3-col l8 s12 w3-row-padding w3-card w3-round w3-margin-bottom">
                 <div class="w3-container w3-padding">
-                    <h1 id="john-doe">John Doe</h1>
-<p>Software developer, XYZ Company</p>
+                    <h1 class="no_toc" id="problems-in-file-system">Problems in File System</h1>
 
-<h2 id="experiance">Experiance</h2>
+<hr />
+
+<p>File systems manages data in secondary storage devices like <strong>Hard drives</strong>.</p>
+
+<p>Users use that space according to their requirement. They create files, folders, delete data, move data, copy data, etc.</p>
+
+<p>Following are the <strong>problems with the file system</strong> which are overcomed by <strong>database management system</strong>.</p>
+
+<hr />
+
+<h2 id="redundancy-of-data">Redundancy of Data</h2>
 
 <ul>
-  <li><strong>Software engineer (2007 - 2010)</strong>
+  <li>Data is redundant if it&#8217;s copied at many places.</li>
+  <li>Example,
     <ul>
-      <li>Computer science</li>
-    </ul>
-  </li>
-  <li><strong>Web developer (2005 - 2007)</strong>
-    <ul>
-      <li>Artificial intelligence</li>
+      <li>If student wants to change his phone number, he has to do it at many places.</li>
+      <li>Similarly, old records must be deleted from all sections representing that student.</li>
     </ul>
   </li>
 </ul>
 
-<h2 id="education">Education</h2>
+<hr />
+
+<h2 id="inconsistency-of-data">Inconsistency of Data</h2>
 
 <ul>
-  <li><strong>Bachelor&#8217;s degree (2000 - 2004)</strong>
+  <li>Data is said to be inconsistent if multiple copies of same data does not match with each other.</li>
+  <li>Example,
     <ul>
-      <li>Computer science</li>
-    </ul>
-  </li>
-  <li><strong>Master&#8217;s degree (2005 - 2007)</strong>
-    <ul>
-      <li>Artificial intelligence</li>
+      <li>If email address is different in Library and Admission section, it will be inconsistent.</li>
+      <li>Inconsistency may be because of typing errors or not updating all copies of same data.</li>
     </ul>
   </li>
 </ul>
 
-<h2 id="projects">Projects</h2>
+<hr />
+
+<h2 id="difficult-data-access">Difficult Data Access</h2>
 
 <ul>
-  <li><strong><a href="https://github.com/">Project 1</a></strong>
+  <li>In file system user has to remember location of the data stored.</li>
+  <li>In DBMS we have various easy methods to retrieve methods.</li>
+</ul>
+
+<hr />
+
+<h2 id="unauthorized-access">Unauthorized Access</h2>
+
+<ul>
+  <li>File system does not provode any mehtods to prevent unauthorized acces.</li>
+  <li>Example,
     <ul>
-      <li>Description</li>
-      <li>Description</li>
+      <li>If in student databse if some student try to access his data; he can also get the details of other students.</li>
     </ul>
   </li>
-  <li><strong><a href="https://github.com/">Project 2</a></strong>
-    <ul>
-      <li>Description</li>
-      <li>Description</li>
-    </ul>
-  </li>
+</ul>
+
+<hr />
+
+<h2 id="no-concurrent-access">No Concurrent Access</h2>
+
+<ul>
+  <li>In file system single data item can be accessed by only one user at a time.</li>
+</ul>
+
+<hr />
+
+<h2 id="no-backup-and-recovery">No Backup and Recovery</h2>
+
+<ul>
+  <li>File system has no mechanism of backup and recovery of the data it it gets lost. or currupted.</li>
 </ul>
 
                 </div>

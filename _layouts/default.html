@@ -12,17 +12,19 @@
 
     <!-- Page Container -->
 
-    <div id="main" class="w3-container" style="max-width:1400px;margin-left: 180px;">
+    <div id="main" class="" style="max-width:1400px;">
 
         {% include navbar.html %}
 
-        <div class="w3-row-padding w3-margin-bottom">
-            <div class="w3-card w3-round w3-white">
+        <div class="w3-row w3-margin-left w3-margin-right">
+            <div class="w3-col l8 s12 w3-row-padding w3-card w3-round w3-margin-bottom">
                 <div class="w3-container w3-padding">
                     {{ content }}
                 </div>
             </div>
         </div>
+
+
 
         {% include footer.html %}
 
@@ -30,7 +32,7 @@
     <!-- End Page Container -->
     <br>
 
-    
+
 
     <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 

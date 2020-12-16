@@ -1,39 +1,20 @@
 // Sidebar toggle
-function w3_open() {
-  document.getElementById("main").style.marginLeft = "180px";
-  document.getElementById("mySidebar").style.width = "180px";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
-}
-function w3_close() {
-  document.getElementById("main").style.marginLeft = "0";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
-}
 function sidebarToggle() {
-  main = document.getElementById("main");
-  sidebar = document.getElementById("mySidebar")
-}
 
-// Accordion
-function toggleAccordion(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else {
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className =
-      x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}
+  var toggleButton = document.getElementById("openNav");
+  var main = document.getElementById("main");
+  var sidebar = document.getElementById("mySidebar");
+  var navbar = document.getElementById("navbar");
 
-function toggleAccordionSmallScreen() {
-  var x = document.getElementById("topic-list");
-  if (x.className.indexOf("w3-hide-small") == -1) {
-    x.className += " w3-hide-small";
+  if (document.getElementById("mySidebar").style.display == "block") {
+    main.style.marginLeft = "0";
+    sidebar.style.display = "none";
+    // navbar.classList.remove('w3-hide-large');
   } else {
-    x.className = x.className.replace("w3-hide-small", "");
+    main.style.marginLeft = "300px";
+    sidebar.style.width = "300px";
+    sidebar.style.display = "block";
+    // navbar.classList.add('w3-hide-large');
   }
 }
 
@@ -53,3 +34,26 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// When window is maximzied make sure sudebar is being desplayed 
+// .(it could be hidden in small screen).
+function displaySidebar(){
+  var w = document.documentElement.clientWidth;
+
+  var toggleButton = document.getElementById("openNav");
+  var main = document.getElementById("main");
+  var sidebar = document.getElementById("mySidebar");
+  var navbar = document.getElementById("navbar");
+
+  if(w >= 993) {
+
+    main.style.marginLeft = "300px";
+    sidebar.style.width = "300px";
+    sidebar.style.display = "block";
+    navbar.classList.add('w3-hide-large');
+  }
+  
+}
+  
+// Attaching the event listener function to window's resize event
+window.addEventListener("resize", displaySidebar);

@@ -1,0 +1,75 @@
+I"¿<h1 class="no_toc" id="dbms-languages">DBMS Languages</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#data-definition-language" id="markdown-toc-data-definition-language">Data Definition Language</a></li>
+  <li><a href="#data-manipulation-language" id="markdown-toc-data-manipulation-language">Data Manipulation Language</a></li>
+  <li><a href="#data-control-language" id="markdown-toc-data-control-language">Data Control Language</a></li>
+  <li><a href="#transaction-control-language" id="markdown-toc-transaction-control-language">Transaction Control Language</a></li>
+</ol>
+
+<hr />
+
+<h2 id="data-definition-language">Data Definition Language</h2>
+
+<ul>
+  <li>Data definition language or <strong>DDL</strong> for short is used to define database structure or pattern.</li>
+  <li>Used to create schema, tables, indexes, constraint, etc. in databse.</li>
+  <li>Some common SQL commands in DDL
+    <ul>
+      <li><strong>Create:</strong> It is used to create objects in the database.</li>
+      <li><strong>Alter:</strong> It is used to alter the structure of the database.</li>
+      <li><strong>*Drop:</strong> It is used to delete objects from the database.</li>
+      <li><strong>Truncate:</strong> It is used to remove all records from a table.</li>
+      <li><strong>Rename:</strong> It is used to rename an object.</li>
+      <li><strong>Comment:</strong> It is used to comment on the data dictionary.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="data-manipulation-language">Data Manipulation Language</h2>
+
+<ul>
+  <li>Data manipulation language or <strong>DML</strong> for short is used retrieving and manipulating data in the DBMS.</li>
+  <li>Here are some DML tasks
+    <ul>
+      <li><strong>Select:</strong> It is used to retrieve data from a database.</li>
+      <li><strong>Insert:</strong> It is used to insert data into a table.</li>
+      <li><strong>Update:</strong> It is used to update existing data within a table.</li>
+      <li><strong>Delete:</strong> It is used to delete all records from a table.</li>
+      <li><strong>Merge:</strong> It performs UPSERT operation, i.e., insert or update operations.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="data-control-language">Data Control Language</h2>
+
+<ul>
+  <li>Data Control language or <strong>DCL</strong> for short is used to <strong>manage rights and permissions</strong> on the DBMS.</li>
+  <li>Examples of DCL tasks
+    <ul>
+      <li><strong>Grant:</strong> Used to grant various kinds of permissions.</li>
+      <li><strong>Revoke:</strong> Used to withdraw different access privileges given by using the <code class="language-plaintext highlighter-rouge">GRANT</code> command.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="transaction-control-language">Transaction Control Language</h2>
+
+<ul>
+  <li>Transaction Control language or <strong>TCL</strong> for short is used to <strong>manage changes made by DML.</strong></li>
+  <li>Here are some tasks that come under TCL:
+    <ul>
+      <li><strong>Commit:</strong> It is used to save the transaction on the database.</li>
+      <li><strong>Rollback:</strong> It is used to restore the database to original since the last Commit.</li>
+    </ul>
+  </li>
+</ul>
+:ET

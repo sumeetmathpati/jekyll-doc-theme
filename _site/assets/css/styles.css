@@ -18,6 +18,11 @@ img {
     width: 100%;
 }
 
+#main {
+    margin-top: 16px;
+    margin-left: 300px;
+}
+
 /* Lists */
 ul, ol {
     padding-left: 16px;
@@ -78,7 +83,7 @@ li > ul, li > ol {
 #go-to-top-button {
     display: none;
     position: fixed;
-    bottom: 32px;
+    bottom: 48px;
     right: 32px;
     z-index: 99;
     font-size: 16px;
@@ -96,54 +101,6 @@ li > ul, li > ol {
 }
 /* Go to top button End */
 
-/* Left Column */
-/* #left-column {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 80px;
-}
-@media (max-width:600px) {
-    #left-column {
-        position: static;
-    }
-}
-.left-column {
-    text-overflow: ellipsis;
-}
-.tooltip {
-    position: relative;
-    display: inline-block;   
-}
-.tooltip:first-child,
-.tooltip:first-child > a {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-.tooltip:last-child,
-.tooltip:last-child > span {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: #57707d;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    transition: opacity .6s;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: 5px;
-    left: 105%;
-}
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-} */
-/* Left Column End */
-
 
 /* Small Screen Style */
 @media (max-width:600px) {
@@ -151,5 +108,18 @@ li > ul, li > ol {
     #post-content > div > div  {
         padding: 0;
     }
+    #mySidebar {
+        display: none;
+    }
+    #main {
+        margin-top: 64px;
+        margin-left: 0;
+    }
 }
-/* Small Screen Style ENd */
+/* Small Screen Style End */
+
+/* Large Screen Style */
+@media (max-width:993px) {
+    
+}
+/* Large Screen Style End */
