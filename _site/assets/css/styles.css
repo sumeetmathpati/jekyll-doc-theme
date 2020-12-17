@@ -41,9 +41,36 @@ li {
 li > ul, li > ol {
     margin-top: 16px;
 }
+.task-list-item {
+    display: flex;
+    align-items: center;
+}
+.task-list-item-checkbox {
+    margin-right: 0.6em;
+    box-sizing: border-box;
+    padding: 0;
+}
 /* Lists */
 
 /* Code */
+code,
+.code > pre {
+    font-family: "Fira Code";
+}
+p > code,
+h1 > code,
+h2 > code,
+h3 > code,
+h4 > code,
+h5 > code,
+h6 > code {
+    background-color: #f5f7f8;
+    border: 1px solid #becbd2;
+    border-radius: 4px;
+}
+p > code {
+    color: crimson;
+}
 .codebox {
     border-radius: 4px;
 }
@@ -56,6 +83,7 @@ li > ul, li > ol {
 }
 .highlight {
     margin: 0;
+    border-radius: 4px;
 }
 .highlight > pre {
     margin: 0;
@@ -154,6 +182,99 @@ li > ul, li > ol {
 }
 /* Buttons */
 
+/* Labels */
+.label,
+.label-blue {
+    display:inline-block;
+    padding-top:0.16em;
+    padding-right:0.56em;
+    padding-bottom:0.16em;
+    padding-left:0.56em;
+    margin-right:.5rem;
+    margin-left:.5rem;
+    color:#fff;
+    text-transform:uppercase;
+    vertical-align:middle;
+    background-color:#57707d;
+    font-size:13px !important;
+    /* border-radius:12px */
+}
+.label-blue {
+    background-color:#2869e6
+}
+.label-green {
+ background-color:#009c7b
+}
+.label-purple {
+ background-color:#5e41d0
+}
+.label-red {
+ background-color:#e94c4c
+}
+.label-yellow {
+ color:#44434d;
+ background-color:#f7d12e
+}
+/* Labels End */
+
+/* Table */
+#doc-content > table,
+.code-example > table{
+    border-collapse:collapse;
+    border-spacing:0;
+    width:100%;
+    display:table;
+    border:2px solid #becbd2;
+    margin-bottom: 32px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12),0 3px 10px rgba(0,0,0,0.08);
+}
+#doc-content > table > thead > tr,
+#doc-content > table > tbody > tr,
+.code-example > table > thead > tr,
+.code-example > table > tbody > tr{
+    border-bottom:1px solid #f5f7f8
+}
+#doc-content > table > thead > tr:nth-child(odd),
+#doc-content > table > tbody > tr:nth-child(odd),
+.code-example > table > thead > tr:nth-child(odd),
+.code-example > table > tbody > tr:nth-child(odd) {
+    background-color:#fff
+}
+#doc-content > table > thead > tr:nth-child(even),
+#doc-content > table > tbody > tr:nth-child(even),
+.code-example > table > thead > tr:nth-child(even),
+.code-example > table > tbody > tr:nth-child(even) {
+    background-color:#f1f1f1
+}
+#doc-content > table > tbody tr:hover,
+.code-example > table > tbody tr:hover {
+    background-color:#becbd2
+}
+#doc-content > table > thead > tr > th,
+#doc-content > table > tbody > tr > td,
+.code-example > table > thead > tr > th,
+.code-example > table > tbody > tr > td {
+    padding:8px 8px;
+    display:table-cell;
+    text-align:left;
+    vertical-align:top;
+    border-right: 1px solid #becbd2;
+}
+
+#doc-content > table > thead > tr > th:first-child,
+#doc-content > table > tbody > tr > td:first-child,
+.code-example > table > thead > tr > th:first-child,
+.code-example > table > tbody > tr > td:first-child {
+    padding-left:16px;
+}
+#doc-content > table > thead > tr > th,
+.code-example > table > thead > tr > th {
+    background-color: #7d97a5;
+    color: white;
+}
+/* Table End */
+
+
 /* Buttons End */
 /* Go to top button */
 #go-to-top-button {
@@ -166,7 +287,7 @@ li > ul, li > ol {
     border: none;
     outline: none;
     background-color: #303e45;
-    color: #ccc;
+    color: #becbd2;
     cursor: pointer;
     padding: 16px;
     border-radius: 4px;
@@ -181,7 +302,7 @@ li > ul, li > ol {
     margin-top: 40px;
 }
 #doc-content > h2 {
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 #doc-title {

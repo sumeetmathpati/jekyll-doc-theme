@@ -1,0 +1,10 @@
+I"È<h1 id="inline-code">Inline code</h1>
+
+<p>Inline code is rendered like this.</p>
+
+<p>Lorem ipsum dolor sit amet, <code class="language-plaintext highlighter-rouge">&lt;inline code snippet&gt;</code> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<h2 id="heading-with-inline-code-snippet-in-it">Heading with <code class="language-plaintext highlighter-rouge">&lt;inline code snippet&gt;</code> in it.</h2>
+
+<hr />
+:ET

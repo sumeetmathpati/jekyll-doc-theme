@@ -1,0 +1,61 @@
+I"<h1 id="unordered-lists">Unordered lists</h1>
+
+<p>Unordered lists are rendered like this.</p>
+
+<div class="code-example">
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<p><em>or</em></p>
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">-</span> Item 1
+<span class="p">-</span> Item 2
+<span class="p">-</span> Item 3
+
+<span class="ge">*or*</span>
+<span class="p">
+*</span> Item 1
+<span class="p">*</span> Item 2
+<span class="p">*</span> Item 3</code></pre></figure>
+
+<h1 id="ordered-list">Ordered list</h1>
+
+<p>Ordered lists are rendered like this.</p>
+
+<div class="code-example">
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">1.</span> Item 1
+<span class="p">1.</span> Item 2
+<span class="p">1.</span> Item 3</code></pre></figure>
+
+<h1 id="task-list">Task list</h1>
+
+<div class="code-example">
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />hello, this is a todo item</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />hello, this is another todo item</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />goodbye, this item is done</li>
+</ul>
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">-</span> [ ] hello, this is a todo item
+<span class="p">-</span> [ ] hello, this is another todo item
+<span class="p">-</span> [x] goodbye, this item is done</code></pre></figure>
+
+:ET

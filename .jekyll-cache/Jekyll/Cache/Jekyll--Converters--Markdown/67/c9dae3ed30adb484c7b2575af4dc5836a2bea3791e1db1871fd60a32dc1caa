@@ -1,0 +1,18 @@
+I"ô<h1 id="basic-button-styles">Basic button styles</h1>
+
+<div class="code-example">
+<p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+<p><a href="/jekyll-doc-theme/">Link to another page</a>.</p>
+</div>
+<p><a href="http://example.com/" class="btn">Link button</a></p>
+
+<p><a href="http://example.com/" class="btn-green">Link button</a>
+<a href="http://example.com/" class="btn-red">Link button</a>
+<a href="http://example.com/" class="btn-info">Link button</a></p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn }
+
+<span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn-green }
+<span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn-red }
+<span class="p">[</span><span class="nv">Link button</span><span class="p">](</span><span class="sx">http://example.com/</span><span class="p">)</span>{: .btn-info }</code></pre></figure>
+:ET

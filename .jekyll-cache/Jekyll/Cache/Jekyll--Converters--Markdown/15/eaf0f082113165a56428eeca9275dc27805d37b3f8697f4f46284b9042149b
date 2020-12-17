@@ -1,0 +1,44 @@
+I"Ä<h1 id="unordered-lists">Unordered lists</h1>
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2
+    <ul>
+      <li>Item 2.1</li>
+    </ul>
+  </li>
+  <li>Item 3
+    <ul>
+      <li>Item 3.1
+        <ul>
+          <li>Item 3.1.1</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><em>or</em></p>
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<h1 id="ordered-list">Ordered list</h1>
+
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+
+<h1 id="task-list">Task list</h1>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />hello, this is a todo item</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />hello, this is another todo item</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />goodbye, this item is done</li>
+</ul>
+:ET
