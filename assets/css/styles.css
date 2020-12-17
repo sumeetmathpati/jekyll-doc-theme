@@ -1,3 +1,7 @@
+body {
+    background-color: white;
+}
+
 html,
 body,
 h1,
@@ -7,6 +11,11 @@ h4,
 h5 {
     font-family: "Open Sans", sans-serif;
     color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab";
+    font-weight: bold;
 }
 
 p, a, li {
@@ -19,7 +28,6 @@ img {
 }
 
 #main {
-    margin-top: 16px;
     margin-left: 300px;
 }
 
@@ -51,7 +59,8 @@ li > ul, li > ol {
 }
 .highlight > pre {
     margin: 0;
-    padding: 8px;
+    padding: 16px;
+    overflow-x: auto;
 }
 /* Code End */
 
@@ -79,6 +88,73 @@ li > ul, li > ol {
 }
 /* Notes End */
 
+.btn {
+    color: #fff;
+    background-color: #57707d;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn:hover {
+    background-color: #7d97a5;
+}
+.btn-red {
+    color: #fff;
+    background-color: #f32617;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-red:hover {
+    background-color: #f6665c;
+}
+.btn-green {
+    color: #fff;
+    background-color: #459c48;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-green:hover {
+    background-color: #6ec071;
+}
+.btn-info {
+    color: #333;
+    background-color: #becbd2;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-info:hover {
+    background-color: #dfe5e8;
+}
+/* Buttons */
+
+/* Buttons End */
 /* Go to top button */
 #go-to-top-button {
     display: none;
@@ -101,6 +177,21 @@ li > ul, li > ol {
 }
 /* Go to top button End */
 
+#doc-content > h1 {
+    margin-top: 40px;
+}
+#doc-content > h2 {
+    margin-top: 32px;
+}
+
+#doc-title {
+    font-size: 48px;
+}
+
+.code-example{
+    border: 1px solid #eee;
+    padding: 16px;
+}
 
 /* Small Screen Style */
 @media (max-width:600px) {
@@ -112,7 +203,7 @@ li > ul, li > ol {
         display: none;
     }
     #main {
-        margin-top: 64px;
+        margin-top: 48px;
         margin-left: 0;
     }
 }

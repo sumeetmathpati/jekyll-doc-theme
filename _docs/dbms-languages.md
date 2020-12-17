@@ -1,6 +1,5 @@
 ---
 title: DBMS Languages
-parent: DBMS
 serial: 4
 description: "DBMS languages, DDL, DML, DCL"
 ---

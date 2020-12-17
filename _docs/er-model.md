@@ -1,6 +1,5 @@
 ---
 title: ER Model
-parent: DBMS
 serial: 6
 description: "Entity relationship model or ER model."
 ---

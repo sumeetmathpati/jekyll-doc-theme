@@ -1,6 +1,5 @@
 ---
 title: Data Models
-parent: DBMS
 serial: 5
 description: "Data models in DBMS. Hirarchical model, Network model, ER model, Relational model."
 ---

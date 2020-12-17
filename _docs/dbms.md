@@ -1,8 +1,7 @@
 ---
-title: DBMS
-description: "My review of Inception movie. Acting, plot and something else in this short description."
+title: Installation
+description: Installig jekyll doc theme
 serial: 1
-permalink: /dbms/
 ---
 
 # DBMS

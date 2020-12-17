@@ -1,6 +1,5 @@
 ---
 title: Database Architectures
-parent: DBMS
 serial: 7
 ---
 
