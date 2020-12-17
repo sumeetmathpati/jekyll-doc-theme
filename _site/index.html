@@ -15,18 +15,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
-<body class="w3-theme-l5" >
+<body class="w3-theme-l5">
 
     <div class="w3-sidebar w3-theme w3-card-4" style="width: 300px; top: 0;" id="mySidebar">
     <div class="w3-bar-block">
         
         <div class="w3-theme-d2 w3-center w3-padding-16">
             <h4 class="w3-theme-d2" style="margin: 0;">Jekyll Doc Theme</h4>
+            <!-- <input onclick="document.getElementById('search-modal').style.display='block'" class="w3-input w3-border" type="text"> -->
+            <input class="w3-input w3-border" type="text" id="search-input" placeholder="Search blog posts..">
         </div>
 
         
         
-        <a class="w3-bar-item w3-button w3-theme" href="/jekyll-doc-theme/docs/dbms/">Installation</a>
+        <a class="w3-bar-item w3-button w3-theme" href="/jekyll-doc-theme/docs/installation/">Installation</a>
         
         <a class="w3-bar-item w3-button w3-theme" href="/jekyll-doc-theme/docs/typography/">Typography</a>
         
@@ -92,10 +94,10 @@
     <!-- End Page Container -->
     <br>
 
-
-
+    <!-- <script src="/jekyll-doc-theme/assets/js/search-script.js" type="text/javascript"></script> -->
+    <script src="/jekyll-doc-theme/assets/js/jekyll-search.js" type="text/javascript"></script>
     <script src="/jekyll-doc-theme/assets/js/main.js"></script>
-
+    
 </body>
 
 </html>

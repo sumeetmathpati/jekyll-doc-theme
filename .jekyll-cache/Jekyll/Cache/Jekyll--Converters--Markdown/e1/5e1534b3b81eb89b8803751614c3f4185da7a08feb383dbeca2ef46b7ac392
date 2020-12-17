@@ -1,17 +1,26 @@
-I"Ì	<h1 id="inline-code">Inline code</h1>
+I"ê<h1 id="inline-code">Inline code</h1>
 
 <p>Inline code is rendered like this.</p>
 
+<div class="code-example">
 <p>Lorem ipsum dolor sit amet, <code class="language-plaintext highlighter-rouge">&lt;inline code snippet&gt;</code> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
 <h2 id="heading-with-inline-code-snippet-in-it">Heading with <code class="language-plaintext highlighter-rouge">&lt;inline code snippet&gt;</code> in it.</h2>
+</div>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span><span class="p">,</span> <span class="sb">`&lt;inline code snippet&gt;`</span> <span class="n">adipisicing</span> <span class="n">elit</span><span class="p">,</span> <span class="n">sed</span> <span class="k">do</span> <span class="n">eiusmod</span> <span class="n">tempor</span> <span class="n">incididunt</span> <span class="n">ut</span> <span class="n">labore</span> <span class="n">et</span> <span class="n">dolore</span> <span class="n">magna</span> <span class="n">aliqua</span><span class="o">.</span>
+
+<span class="c1">## Heading with `&lt;inline code snippet&gt;` in it.</span></code></pre></figure>
+
+<hr />
 
 <h1 id="code-blocks">Code blocks</h1>
 
 <h2 id="code-blocks-with-heading">Code blocks with heading</h2>
 
+<div class="code-example">
+
 <div class="w3-theme-l5 codebox">
-    <p class=" w3-center w3-theme-l4 code-name">Header</p>
+<p class=" w3-center w3-theme-l4 code-name">Header</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
@@ -21,13 +30,30 @@
 
 </div>
 
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">{% highlight markdown %}
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+{% endhighlight %}</code></pre></figure>
+
 <h2 id="code-blocks-without-heading">Code blocks without heading</h2>
 
+<div class="code-example">
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="s">"I am Python!"</span><span class="p">)</span></code></pre></figure>
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">{% highlight python %}
+print("Hello World")
+print("I am Python!")
+{% endhighlight %}</code></pre></figure>
 
 <h2 id="code-blocks-with-line-numbers">Code blocks with line numbers</h2>
 
+<div class="code-example">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
@@ -39,6 +65,15 @@
     <span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/li&gt;</span>
 </pre></td></tr></tbody></table></code></pre></figure>
+</div>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">{% highlight html linenos %}
+<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ml-1 mr-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-twitter"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/li&gt;</span>
+{% endhighlight %}</code></pre></figure>
 
 <hr />
 :ET

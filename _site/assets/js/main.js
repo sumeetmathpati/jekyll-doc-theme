@@ -54,6 +54,4 @@ function displaySidebar(){
   }
   
 }
-  
-// Attaching the event listener function to window's resize event
 window.addEventListener("resize", displaySidebar);
