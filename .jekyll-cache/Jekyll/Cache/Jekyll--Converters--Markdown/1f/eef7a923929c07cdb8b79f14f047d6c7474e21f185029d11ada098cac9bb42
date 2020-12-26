@@ -1,11 +1,11 @@
-I"^<h1 id="headings">Headings</h1>
+I"‹<h1 id="headings">Headings</h1>
 
 <p>Headings are rendered like this:</p>
 
 <div class="code-example">
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
+<h1 class="no_toc">Heading 1</h1>
+<h2 class="no_toc">Heading 2</h2>
+<h3 class="no_toc">Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>

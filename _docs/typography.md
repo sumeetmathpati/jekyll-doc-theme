@@ -1,6 +1,7 @@
 ---
 title: Typography
 serial: 2
+max_level: 1
 ---
 
 # Headings
@@ -8,9 +9,9 @@ serial: 2
 Headings are rendered like this:
 
 <div class="code-example">
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
+<h1 class="no_toc">Heading 1</h1>
+<h2 class="no_toc">Heading 2</h2>
+<h3 class="no_toc">Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>

@@ -1,0 +1,90 @@
+I"à<p>There are lots of powerful things you can do with the Markdown editor. If you&#8217;ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!</p>
+
+<h1 id="notes">Notes</h1>
+
+<p class="note">London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+
+<p class="info">London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+
+<p class="warning">London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+
+<p>As with the last post about the editor, you&#8217;ll want to be actually editing this post as you read it so that you can see all the Markdown code we&#8217;re using.</p>
+
+<h1 id="special-formatting">Special formatting</h1>
+
+<p>As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:</p>
+
+<ul>
+  <li><del>strike through</del></li>
+  <li>==highlight==</li>
+  <li>*escaped characters*</li>
+</ul>
+
+<h1 id="writing-code-blocks">Writing code blocks</h1>
+
+<p>There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, <code class="language-plaintext highlighter-rouge">like this</code>. Larger snippets of code can be displayed across multiple lines using triple back ticks:</p>
+
+<div class="w3-theme-l5 codebox">
+<p class=" w3-center w3-theme-l4 code-name">Header</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+</div>
+
+<h3 id="html">HTML</h3>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ml-1 mr-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-twitter"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/li&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="python">Python</h3>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">)</span></code></pre></figure>
+
+<h3 id="c">C</h3>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">printf</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">);</span></code></pre></figure>
+
+<p><img src="https://wowthemesnet.github.io/mediumish-theme-jekyll/assets/images/16.jpg" alt="walking" /></p>
+<h1 id="table">Table</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Syntax</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Header</td>
+      <td>Title</td>
+    </tr>
+    <tr>
+      <td>Paragraph</td>
+      <td>Text</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="full-html">Full HTML</h1>
+
+<p>Perhaps the best part of Markdown is that you&#8217;re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here&#8217;s a standard YouTube embed code as an example:</p>
+
+<!-- <p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p> -->
+
+<iframe height="315px" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+:ET

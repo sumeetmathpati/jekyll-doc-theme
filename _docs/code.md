@@ -26,28 +26,27 @@ Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiu
 ## Code blocks with heading
 
 <div class="code-example">
-
 <div class="w3-theme-l5 codebox">
 <p class=" w3-center w3-theme-l4 code-name">Header</p>
-
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
 </div>
-
 </div>
 
 {% highlight markdown %}
 {% raw %}
+<div class="w3-theme-l5 codebox">
+<p class=" w3-center w3-theme-l4 code-name">Header</p>
 {% highlight markdown %}
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
   return true;
 }
 {% endhighlight %}
+</div>
 {% endraw %}
 {% endhighlight %}
 

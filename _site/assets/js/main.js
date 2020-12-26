@@ -35,8 +35,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// When window is maximzied make sure sudebar is being desplayed 
-// .(it could be hidden in small screen).
+// When window is maximzied make sure sudebar is being desplayed (it could be hidden in small screen).
 function displaySidebar(){
   var w = document.documentElement.clientWidth;
 

@@ -1,4 +1,4 @@
-I"ê<h1 id="inline-code">Inline code</h1>
+I"L<h1 id="inline-code">Inline code</h1>
 
 <p>Inline code is rendered like this.</p>
 
@@ -18,26 +18,25 @@
 <h2 id="code-blocks-with-heading">Code blocks with heading</h2>
 
 <div class="code-example">
-
 <div class="w3-theme-l5 codebox">
 <p class=" w3-center w3-theme-l4 code-name">Header</p>
-
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
+</div>
 </div>
 
-</div>
-
-<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">{% highlight markdown %}
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"w3-theme-l5 codebox"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">" w3-center w3-theme-l4 code-name"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/p&gt;</span>
+{% highlight markdown %}
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
   return true;
 }
-{% endhighlight %}</code></pre></figure>
+{% endhighlight %}
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h2 id="code-blocks-without-heading">Code blocks without heading</h2>
 

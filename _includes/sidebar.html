@@ -8,24 +8,16 @@
 
         {% assign docs = site.docs | sort: "serial" %}
         {% for doc in docs %}
-        <a class="w3-bar-item w3-button w3-theme-d1 w3-hover-theme" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-        {% endfor %}
+        <!-- <a class="w3-bar-item w3-button w3-theme-d1 w3-hover-theme" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a> -->
 
-        <!-- <div class="w3-dropdown-hover">
-            <a class="w3-button" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 1</a>
-                <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 2</a>
-                <a class="w3-bar-item w3-button" href="javascript:void(0)">Link 3</a>
-            </div>
-        </div> -->
-
-        <a class="w3-button w3-block w3-left-align" onclick="toggleAccordion('demoAcc')">
-            Accordion <i class="fa fa-caret-down"></i>
+        <a href="{{ site.baseurl }}{{ doc.url }}" class="w3-button w3-block w3-left-align w3-theme-d1 w3-hover-theme"  title="{{ doc.title }}" style="text-overflow: ellipsis;">
+            {{ doc.title }}
         </a>
-        <div id="demoAcc" class="w3-hide w3-white w3-card">
-            <a href="#" class="w3-bar-item w3-button">Link</a>
-            <a href="#" class="w3-bar-item w3-button">Link</a>
+        <div id="{{ doc.title }}" class="w3-hide w3-card {% if doc.title == page.title %} w3-show {% endif %}">
+            <div id="table-of-contents">
+                {% toc %}
+              </div>
         </div>
+        {% endfor %}
     </div>
 </div>
