@@ -295,10 +295,8 @@ p > code {
     font-size: 16px;
     border: none;
     outline: none;
-    /* background-color: #303e45; */
     cursor: pointer;
     padding: 16px;
-    /* border-radius: 4px; */
     opacity: 50%;
 }
 #go-to-top-button:hover {
