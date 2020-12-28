@@ -15,8 +15,9 @@
         </a>
         <div id="{{ doc.title }}" class="w3-hide w3-card {% if doc.title == page.title %} w3-show {% endif %}">
             <div id="table-of-contents">
-                {% toc %}
-              </div>
+                {% include toc.html html=content class="section-nav" item_class="toc-entry" h_min=1 h_max=1 %}
+            </div>
+            
         </div>
         {% endfor %}
     </div>

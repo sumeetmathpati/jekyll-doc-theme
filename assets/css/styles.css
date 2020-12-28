@@ -320,6 +320,9 @@ p > code {
 #table-of-contents > h3 {
     margin: 0;
 }
+.toc-entry:first-child {
+    display: none;
+}
 .toc-entry:hover {
     background-color: #becbd2 !important;
 }
