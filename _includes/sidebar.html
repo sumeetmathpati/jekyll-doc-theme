@@ -1,18 +1,22 @@
-<div class="w3-sidebar w3-theme-d1 w3-card-4" style="width: 300px; top: 0;" id="mySidebar">
+<div class="w3-sidebar w3-card-4" style="width: 300px; top: 0;" id="mySidebar">
+    
     <div class="w3-bar-block">
 
-        <div class="w3-theme-d2 w3-center w3-padding-16">
-            <a href="{{ site.baseurl }}/"><h4 class="w3-theme-d2" style="margin: 0;">{{ site.title }}</h4></a>
-            
+        <div id="site-title" class="w3-center w3-padding-16">
+            <a href="{{ site.baseurl }}/"><h4 style="margin: 0;">{{ site.title }}</h4></a>
         </div>
 
         {% assign docs = site.docs | sort: "serial" %}
         {% for doc in docs %}
-        <!-- <a class="w3-bar-item w3-button w3-theme-d1 w3-hover-theme" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a> -->
-
-        <a href="{{ site.baseurl }}{{ doc.url }}" class="w3-button w3-block w3-left-align w3-theme-d1 w3-hover-theme"  title="{{ doc.title }}" style="text-overflow: ellipsis;">
-            {{ doc.title }}
+        
+        {% if doc.heading %}
+        <p class="w3-block w3-left-align doc-heading">{{ doc.heading }}</p>
+        {% endif %}
+        
+        <a href="{{ site.baseurl }}{{ doc.url }}" class="doc-button w3-block w3-left-align"  title="{{ doc.title }}" style="text-overflow: ellipsis;">
+            <i class="w3-button w3-small fas fa-caret-down"></i> {{ doc.title }}
         </a>
+        
         <div id="{{ doc.title }}" class="w3-hide w3-card {% if doc.title == page.title %} w3-show {% endif %}">
             <div id="table-of-contents">
                 {% include toc.html html=content class="section-nav" item_class="toc-entry" h_min=1 h_max=1 %}

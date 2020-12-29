@@ -1,4 +1,5 @@
 ---
+heading: "Examples"
 title: "Example: Table of Content"
 serial: 8
 toc: true
