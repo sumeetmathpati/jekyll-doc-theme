@@ -322,6 +322,7 @@ p > code {
 /* Sidebar */
 #mySidebar {
     background-color: #4A6572;
+    color: white;
 }
 #openNav {
     color: #344955;
@@ -330,12 +331,12 @@ p > code {
 #openNav:hover {
     background-color: #ff9900;
 }
-#mySidebar .doc-button {
+#mySidebar .doc-button,
+.section-nav li {
     color: #f5f7f8;
     border: none;
-    display: inline-block;
+    display: block;
     padding: 4px 16px;
-    vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
     background-color: inherit;
@@ -343,9 +344,10 @@ p > code {
     cursor: pointer;
     white-space: nowrap;
     font-size: 16px;
+    text-overflow: ellipsis;
 }
 #mySidebar .doc-button:hover {
-    background-color: #607b88;
+    background-color: #344955;
 }
 #site-title {
     background-color: #344955;
@@ -373,10 +375,6 @@ p > code {
     padding: 0;
     list-style: none;    
 }
-.section-nav li {
-    margin: 0;
-    padding-left: 16px;
-}
 #table-of-contents > h3 {
     margin: 0;
 }
@@ -384,19 +382,20 @@ p > code {
     display: none;
 }
 .toc-entry:hover {
-    background-color: #becbd2 !important;
+    background-color: #344955 !important;
 }
 .toc-entry a {
+    color: white;
     margin-bottom: 0;
     width: 100%;
     display: block;
-    padding: 4px 16px;
     text-align: left;
     border: none;
     white-space: normal;
     float: none;
     outline: 0;
-    font-size: 14px;
+    font-size: 16px;
+    padding-left: 16px;
 }
 .toc-entry > ul{
     margin: 0;

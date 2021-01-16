@@ -13,16 +13,24 @@
         <p class="w3-block w3-left-align doc-heading">{{ doc.heading }}</p>
         {% endif %}
         
-        <a href="{{ site.baseurl }}{{ doc.url }}" class="doc-button w3-block w3-left-align"  title="{{ doc.title }}" style="text-overflow: ellipsis;">
+        <!-- <a href="{{ site.baseurl }}{{ doc.url }}" class="doc-button w3-block w3-left-align"  title="{{ doc.title }}" style="text-overflow: ellipsis;">
             <i class="w3-button w3-small fas fa-caret-down"></i> {{ doc.title }}
-        </a>
+        </a> -->
+        <div class="w3-block">
+            <a href="{{ site.baseurl }}{{ doc.url }}"
+                class="w3-block w3-left-align doc-button" title="{{ doc.title }}">
+                {{ doc.title }}
+            </a>
+        </div>
         
-        <div id="{{ doc.title }}" class="w3-hide w3-card {% if doc.title == page.title %} w3-show {% endif %}">
-            <div id="table-of-contents">
+        {% if doc.title == page.title %}
+        <div id="{{ doc.title }}">
+            <div id="table-of-contents" style="background-color: #607b88;">
                 {% include toc.html html=content class="section-nav" item_class="toc-entry" h_min=1 h_max=1 %}
             </div>
-            
         </div>
+        {% endif %}
+
         {% endfor %}
     </div>
 </div>
